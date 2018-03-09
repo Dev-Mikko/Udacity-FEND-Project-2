@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Dev_Mikko's Portfolio</title>
 		<!-- CSS data files -->
-		<link href="css/styles.css" rel="stylesheet" src="text/css">
+		<link href="css/styles.css" rel="stylesheet">
 		<!-- Google Fonts -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -17,10 +17,14 @@
 	<body>
 		<!-- Top-bar -->
 		<header class="top-bar">
+			<!-- Logo space for header -->
 			<div class="logo-space">
-				<img src="img/logo.png" alt="logo" class="logo" title="Dev_Mikko's Logo">
+				<a href="index.html" title="Dev_Mikko's portfolio">
+					<img src="img/logo.png" alt="logo" class="logo">
+				</a>
 			</div>
 
+			<!-- Text space for header title (Hidden for width <= 500px) -->
 			<div class="text-space">
 				<h4 class="title">Dev_Mikko</h4>
 				<h6 class="subtitle">Front-end Web Developer</h6>
@@ -28,15 +32,43 @@
 		</header>
 		
 		<!-- Img divider -->
-		<div class="img-box">
+		<div class="img-box fading">
 			<img src="img/header-img.jpeg" alt="img-divider" class="img-divider">
 		</div>
 		
 		<!-- Portfolio -->
 		<main class="box">
-			<section class="portofolio-container">
+			<section class="portfolio-container">
 				<h4 class="section-title">Portfolio</h4>
+
+				<!-- Portfolio element #1 -->
+				<div class="portfolio-element">
+					<a href="#" title="Pixel Art Maker" class="links">
+						<img src="img/portfolio-1.png" alt="portfolio-element" class="portfolio-img">
+						<div class="portfolio-img-title">Pixel Art Maker!</div>
+					</a>
+				</div>
+
+				<!-- Portfolio element #2 -->
+				<div class="portfolio-element">
+					<a href="#" title="My website" class="links">
+						<img src="img/portfolio-2.png" alt="portfolio-element" class="portfolio-img">
+						<div class="portfolio-img-title">Idea for a website</div>
+					</a>
+				</div>
+
+				<!-- Portfolio element (Coming soon) -->
+				<div class="portfolio-element">
+					<div class="portfolio-img-title centered">Coming soon...</div>
+				</div>
 			</section>
 		</main>
+
+		<!-- Credits box -->
+		<div class="box">
+			<p class="credits">
+				&copy; Dev_Mikko, 2018 - Project for <a href="https://www.udacity.com/" title="www.udacity.com">Udacity</a>
+			</p>
+		</div>
 	</body>
 </html>
