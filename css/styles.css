@@ -170,12 +170,14 @@ body {
 @media screen and (min-width: 768px) {
 	.portfolio-element {
 		width: 45%;
+		min-height: 190px;
 	}
 }
 
 @media screen and (min-width: 1024px) {
 	.portfolio-element {
 		width: 30%;
+		min-height: 175px;
 	}
 }
 
